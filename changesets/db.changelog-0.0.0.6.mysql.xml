@@ -1,0 +1,27 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:pro="http://www.liquibase.org/xml/ns/pro" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-latest.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+<!-- Esctructura de la base de datos project_copy -->
+    <changeSet author="Jared" id="1678846352206-6">
+        <createTable tableName="computers">
+            <column name="pk_id" type="VARCHAR(20)">
+                <constraints nullable="false" primaryKey="true" unique="true"/>
+            </column>
+            <column name="name" type="VARCHAR(50)"/>
+            <column name="price" type="VARCHAR(50)"/>
+            <column name="brand" type="VARCHAR(250)"/>
+            <column name="color" type="VARCHAR(250)"/>
+            <column name="system" type="VARCHAR(250)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="Jared" id="1678846352206-7">
+        <createTable tableName="guitars">
+            <column name="pk_id" type="VARCHAR(20)">
+                <constraints nullable="false" primaryKey="true" unique="true"/>
+            </column>
+            <column name="name" type="VARCHAR(50)"/>
+            <column name="price" type="VARCHAR(50)"/>
+            <column name="brand" type="VARCHAR(250)"/>
+            <column name="type" type="VARCHAR(250)"/>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>
