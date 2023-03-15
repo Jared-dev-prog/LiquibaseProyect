@@ -1,0 +1,41 @@
+Reference Database: root@localhost @ jdbc:mysql://localhost:3306/project_copy (Default Schema: project_copy)
+Comparison Database: root@localhost @ jdbc:mysql://localhost:3306/project (Default Schema: project)
+Compared Schemas: project_copy -> project
+Product Name: EQUAL
+Product Version: EQUAL
+Missing Catalog(s): NONE
+Unexpected Catalog(s): NONE
+Changed Catalog(s): NONE
+Missing Column(s): NONE
+Unexpected Column(s): 
+     project.guitars.brand
+     project.guitars.name
+     project.guitars.pk_id
+     project.guitars.price
+     project.guitars.type
+Changed Column(s): NONE
+Missing Foreign Key(s): NONE
+Unexpected Foreign Key(s): NONE
+Changed Foreign Key(s): NONE
+Missing Index(s): NONE
+Unexpected Index(s): 
+     pk_id UNIQUE  ON project.guitars(pk_id)
+Changed Index(s): NONE
+Missing Primary Key(s): NONE
+Unexpected Primary Key(s): 
+     PRIMARY on project.guitars(pk_id)
+Changed Primary Key(s): NONE
+Missing Sequence(s): NONE
+Unexpected Sequence(s): NONE
+Changed Sequence(s): NONE
+Missing Table(s): NONE
+Unexpected Table(s): 
+     guitars
+Changed Table(s): NONE
+Missing Unique Constraint(s): NONE
+Unexpected Unique Constraint(s): 
+     pk_id on guitars(pk_id)
+Changed Unique Constraint(s): NONE
+Missing View(s): NONE
+Unexpected View(s): NONE
+Changed View(s): NONE
