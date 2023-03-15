@@ -1,0 +1,26 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:pro="http://www.liquibase.org/xml/ns/pro" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-latest.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+
+    <changeSet id="ch-2.0" author="JaredProgrammer">
+        <createTable tableName="Computers">
+            <column name="pk_id" type="VARCHAR(20)">
+                <constraints nullable="false" primaryKey="true" unique="true" />
+            </column>
+            <column name="name" type="VARCHAR(50)">
+                <constraints nullable="true" primaryKey="false" unique="false" />
+            </column>
+            <column name="price" type="VARCHAR(50)">
+                <constraints nullable="true" primaryKey="false" unique="false" />
+            </column>
+            <column name="brand" type="VARCHAR(250)">
+                <constraints nullable="true" primaryKey="false" unique="false" />
+            </column>
+             <column name="color" type="VARCHAR(250)">
+                <constraints nullable="true" primaryKey="false" unique="false" />
+            </column>
+            <column name="system" type="VARCHAR(250)">
+                <constraints nullable="true" primaryKey="false" unique="false" />
+            </column>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>
